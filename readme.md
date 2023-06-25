@@ -7,10 +7,14 @@
 
     .
     ├── ...
-    ├── test                    # Test files (alternatively `spec` or `tests`)
-    │   ├── benchmarks          # Load and stress tests
-    │   ├── integration         # End-to-end, integration tests (alternatively `e2e`)
-    │   └── unit                # Unit tests
+    ├── src                     # all the source files
+    │   ├── configs          # Load and stress tests
+    |   |     ├── database
+    |   |     ├── models
+    |   |     ├── prompts
+    │   ├── prompting         # End-to-end, integration tests (alternatively `e2e`)
+    │   ├── tutorial.ipynb                # Unit tests
+    |   └── models.py  
     └── ...
 
 
