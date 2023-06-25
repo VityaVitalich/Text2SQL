@@ -4,7 +4,29 @@ This repository is dedicated to Text2SQL task. It contains simple and scalable t
 
 ## How to use it
 
-It is highly recommended to use [Tutorial](./src/tutorial.ipynb), where one can find the usage and details of the customizing this repo
+It is highly recommended to use [Tutorial](./src/tutorial.ipynb), where one can find the usage and details of the customizing this repo.
+
+The basic usage relies on changing configs and using builded classes to work with models and prompts. 
+
+Every model should be called with 2 main configs
+ - [MODEL_CONFIG](#MODEL_CONFIG)
+ - [PROMPT_CONFIG](#PROMPT_CONFIG)
+Then model could be queried with method ```query()``` where question is passed and some extra arguments if needed.
+
+#### MODEL_CONFIG
+
+##### HF Configs
+
+Consists of multiple fields
+- TokenizerClass
+- ModelClass
+- model
+  -- pretrained_model_name_or_path
+- tokenizer
+  -- pretrained_model_name_or_path
+- generation_args
+  -- max_new_tokens
+  -- num_beams
 
 ## Structure
 
