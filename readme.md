@@ -10,9 +10,17 @@
     ├── src                     # all the source files
     │   ├── configs          # Load and stress tests
     |   |     ├── database
+    |   |     |    ├── db_credentials.yaml
     |   |     ├── models
+    |   |     |    ├── hf_model_config.yaml
+    |   |     |    ├── openai_model_config.yaml
     |   |     ├── prompts
+    |   |     |    ├── One_shot.yaml
+    |   |     |    ├── QDecomp.yaml
+    |   |     |    ├── Zero_shot.yaml
     │   ├── prompting         # End-to-end, integration tests (alternatively `e2e`)
+    |   |     ├── hf_prompt_schemas.py
+    |   |     ├── openai_prompt_schemas.py
     │   ├── tutorial.ipynb                # Unit tests
     |   └── models.py  
     └── ...
