@@ -1,6 +1,4 @@
-PromptClass: QuestionTableRowsPrompt
+PromptClass: SimplePrompt
 prompt_configs:
-  few_shot: false
-  few_shot_text: "question: get people name with age equal 25 table: id, name, age \n SELECT name FROM table WHERE age = 25"
-  no_need_param: 20
+  few_shot_text: ""
   instruction_text: ""

@@ -1,6 +1,5 @@
-PromptClass: QuestionTableRowsPrompt
+PromptClass: QuestionTableColumnsPrompt
 prompt_configs:
-  few_shot: true
   few_shot_text: |
     question: get people name with age equal 25 table: id, name, age
     First need to select all the people from table
@@ -8,5 +7,4 @@ prompt_configs:
     Second need to select only people with age equal 25, that corresponds to the column age
     SELECT * FROM table WHERE age = 25
     A: SELECT * FROM table WHERE age = 25
-  no_need_param: 20
-  instruction_text: "Act as a proficent SQL developer and ask a question with a step by step reasoning"
+  instruction_text: "Act as a professional SQL developer and answer a question with a step by step reasoning"

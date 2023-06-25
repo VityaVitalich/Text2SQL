@@ -1,4 +1,17 @@
-## Improvado Text2SQL Homework
+# Improvado Text2SQL Homework
+
+## How to use it
+
+
+## Directories
+
+    .
+    ├── ...
+    ├── test                    # Test files (alternatively `spec` or `tests`)
+    │   ├── benchmarks          # Load and stress tests
+    │   ├── integration         # End-to-end, integration tests (alternatively `e2e`)
+    │   └── unit                # Unit tests
+    └── ...
 
 
 ## Papers overview
