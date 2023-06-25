@@ -4,7 +4,7 @@ This repository is dedicated to Text2SQL task. It contains simple and scalable t
 
 ## How to use it
 
-It is highly recommended to use [Tutorial](./src/tutorial.ipynb), where one can find the usage and details of the customizing this repo.
+*It is highly recommended to use [Tutorial](./src/tutorial.ipynb), where one can find the usage and details of the customizing this repo.
 
 The basic usage relies on changing configs and using builded classes to work with models and prompts. 
 
