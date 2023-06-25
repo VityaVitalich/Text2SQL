@@ -8,7 +8,7 @@ It is highly recommended to use [Tutorial](./src/tutorial.ipynb), where one can 
 
 The basic usage relies on changing configs and using builded classes to work with models and prompts. 
 
-Every model should be called with 2 main configs
+Every model should be called with 2 main configs ```HF_LLMQuery(MODEL_CONFIG, PROMPT_CONFIG)```:
  - [MODEL_CONFIG](#MODEL_CONFIG)
  - [PROMPT_CONFIG](#PROMPT_CONFIG)
 
@@ -62,7 +62,19 @@ generation_args:
 
 #### PROMPT_CONFIG
 
+Consists of multiple fields
+- PromptClass - class from ```prompt_schema.py``` that will be used to create proper model prompt
+- prompt_configs - configs that are passed directly to the prompt to alter it
+  - few_shot_text - text, that will be used as a few-shot example before the user query. If passed empty, then count as zero-shot
+  - instruction_text - text, that will be used as an instruction for "system", how it should act. Could be empty as well
 
+Example:
+```yaml
+PromptClass: SimplePrompt
+prompt_configs:
+  few_shot_text: "question: get people name with age equal 25 table: id, name, age \n SELECT name FROM table WHERE age = 25"
+  instruction_text: "Act as a professional SQL developer and answer a question with a step by step reasoning"
+```
 
 ## Structure
 
