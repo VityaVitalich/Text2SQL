@@ -1,7 +1,10 @@
 # Improvado Text2SQL Homework
 
+This repository is dedicated to Text2SQL task. It contains simple and scalable tool for using HF and OpenAI Models for Text2SQL.
+
 ## How to use it
 
+It is highly recommended to use [Tutorial](./src/tutorial.ipynb), where one can find the usage and details of the customizing this repo
 
 ## Structure
 
