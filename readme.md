@@ -11,6 +11,7 @@ The basic usage relies on changing configs and using builded classes to work wit
 Every model should be called with 2 main configs
  - [MODEL_CONFIG](#MODEL_CONFIG)
  - [PROMPT_CONFIG](#PROMPT_CONFIG)
+
 Then model could be queried with method ```query()``` where question is passed and some extra arguments if needed.
 
 #### MODEL_CONFIG
@@ -39,6 +40,29 @@ generation_args:
   max_new_tokens: 32
   num_beams: 12
 ```
+
+##### OpenAI Configs
+
+Consists of multiple fields
+- token - openai token used for generation
+- generation_args - all possible generation arguments that will be passed into openai api call
+  - model - the name of the model, that will be called
+
+Example:
+```yaml
+token: <your token>
+generation_args:
+  temperature: 0
+  max_tokens: 4096
+  top_p: 1.0
+  frequency_penalty: 0.0
+  presence_penalty: 0.0
+  model: gpt-3.5-turbo
+```
+
+#### PROMPT_CONFIG
+
+
 
 ## Structure
 
