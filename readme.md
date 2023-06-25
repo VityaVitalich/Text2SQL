@@ -18,15 +18,27 @@ Then model could be queried with method ```query()``` where question is passed a
 ##### HF Configs
 
 Consists of multiple fields
-- TokenizerClass
-- ModelClass
-- model
-  - pretrained_model_name_or_path
-- tokenizer
-  - pretrained_model_name_or_path
-- generation_args
-  - max_new_tokens
-  - num_beams
+- TokenizerClass - Class for tokenizer from ```transformers``` should be passed
+- ModelClass - Class for model from ```transformers``` should be passed
+- model - parameters passed inside the model init
+  - pretrained_model_name_or_path - the name of model
+- tokenizer - parameters passed inside the tokenizer init
+  - pretrained_model_name_or_path - the name of tokenizer
+- generation_args - all possible generation arguments that could be used with ```.generate()``` method
+
+Example:
+```yaml
+TokenizerClass: AutoTokenizer
+ModelClass: AutoModelForSeq2SeqLM
+
+model:
+  pretrained_model_name_or_path: juierror/flan-t5-text2sql-with-schema
+tokenizer:
+  pretrained_model_name_or_path: juierror/flan-t5-text2sql-with-schema
+generation_args:
+  max_new_tokens: 32
+  num_beams: 12
+```
 
 ## Structure
 
