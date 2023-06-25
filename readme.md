@@ -3,26 +3,26 @@
 ## How to use it
 
 
-## Directories
+## Structure
 
     .
     ├── ...
     ├── src                     # all the source files
-    │   ├── configs          # Load and stress tests
-    |   |     ├── database
+    │   ├── configs          # Config Files
+    |   |     ├── database   # Database credentials
     |   |     |    ├── db_credentials.yaml
-    |   |     ├── models
+    |   |     ├── models     # Models configs
     |   |     |    ├── hf_model_config.yaml
     |   |     |    ├── openai_model_config.yaml
-    |   |     ├── prompts
+    |   |     ├── prompts    # Prompts configs
     |   |     |    ├── One_shot.yaml
     |   |     |    ├── QDecomp.yaml
     |   |     |    ├── Zero_shot.yaml
-    │   ├── prompting         # End-to-end, integration tests (alternatively `e2e`)
-    |   |     ├── hf_prompt_schemas.py
-    |   |     ├── openai_prompt_schemas.py
-    │   ├── tutorial.ipynb                # Unit tests
-    |   └── models.py  
+    │   ├── prompting         # Prompt Schemas
+    |   |     ├── hf_prompt_schemas.py        # Schemas for HuggingFace Models
+    |   |     ├── openai_prompt_schemas.py    # Schemas for OpenAI Models
+    │   ├── tutorial.ipynb                    # User Tutorial
+    |   └── models.py                         # Models source code
     └── ...
 
 
