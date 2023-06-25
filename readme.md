@@ -21,12 +21,12 @@ Consists of multiple fields
 - TokenizerClass
 - ModelClass
 - model
-  -- pretrained_model_name_or_path
+  - pretrained_model_name_or_path
 - tokenizer
-  -- pretrained_model_name_or_path
+  - pretrained_model_name_or_path
 - generation_args
-  -- max_new_tokens
-  -- num_beams
+  - max_new_tokens
+  - num_beams
 
 ## Structure
 
